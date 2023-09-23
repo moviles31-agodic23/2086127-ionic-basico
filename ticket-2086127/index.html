@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Ticket de Compra</title>
+    <meta charset="UTF-8" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script defer type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <title>Ticket de compra</title>
 </head>
 <body>
-    <div class="ContaArticulos">
-        <h3>===TICKET DE COMPRA===</h3>
-        <label for="articulo">Artículo</label>
-        <input type="text" id="articulo" >
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>===Ticket de Compra==</ion-title>
+            </ion-toolbar>
+        </ion-header>
 
-        <label for="precio">Precio</label>
-        <input type="text" id="precio" >
-        <button id="calcular">Calcular Total</button>
-        <h4>========Tu ticket========</h4>
-        
-        <ul id="listaArticulos"></ul>
-        <h4>-------------------------------------</h4>
-        <p id="total">Total:  $0</p>
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="3" offset="4">
+                        <ion-label position="floating">Artículo</ion-label>
+                        <ion-input id="articulo"></ion-input>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="3" offset="4">
+                        <ion-label position="floating">Precio</ion-label>
+                        <ion-input id="precio"></ion-input>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button expand="full" id="calcular">Agregar al Ticket</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-col size="3" offset="3" >
+                <h6>======= TU TICKET ======</h6>
+            </ion-col>
+            <ul id="listaArticulos"></ul>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-label id="total">Total: $ </ion-label>
+                </ion-col>
+            </ion-row>
+            
+        </ion-content>
 
-    </div>
-   
-    <script src="index.js"></script>
-    
+    </ion-app>
 </body>
 </html>
