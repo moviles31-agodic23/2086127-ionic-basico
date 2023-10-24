@@ -7,6 +7,43 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() {
+    console.log("AppComponent: Constructor");
+  }
+
+  ngOnChanges(){
+    console.log("AppComponent: OnChanges");
+  }
+  ngOnInit(){
+    console.log("AppComponent: ngOnInit");
+  }
+  ngDoCheck(){
+    console.log("AppComponent: ngDoCheck");
+  }
+  ngAfterContentInt(){
+    console.log("AppComponent: ngAfterContentInt");
+  }
+  ngAfterContentChecked(){
+    console.log("AppComponent: ngAfterContentChecked");
+  }
+  ngAfterContentViewInit(){
+    console.log("AppComponent: ngAfterContentViewInit");
+  }
+  ngAfterContentViewChecked(){
+    console.log("AppComponent: ngAfterContentViewChecked");
+  }
+  ngOnDestroy(){
+    console.log("AppComponent: ngOnDestroy");
+  }
+
+  title : string ="Mi nuevo pagina!";
+
+  hazmeClic(): void {
+    alert("hiciste clic!");
+  }
+
+  imgUrl: string = 'https://i.redd.it/7ksiaa4exhh01.gif';
+  
+  nombreAlumno: string = '';
 
 }
