@@ -8,35 +8,35 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {
-    console.log("AppComponent: Constructor");
+    console.log("HomePage: Constructor");
   }
 
   ngOnChanges(){
-    console.log("AppComponent: OnChanges");
+    console.log("HomePage: OnChanges");
   }
   ngOnInit(){
-    console.log("AppComponent: ngOnInit");
+    console.log("HomePage: ngOnInit");
   }
   ngDoCheck(){
-    console.log("AppComponent: ngDoCheck");
+    console.log("HomePage: ngDoCheck");
   }
-  ngAfterContentInt(){
-    console.log("AppComponent: ngAfterContentInt");
+  ngAfterContentInit(){
+    console.log("HomePage: ngAfterContentInit");
   }
   ngAfterContentChecked(){
-    console.log("AppComponent: ngAfterContentChecked");
+    console.log("HomePage: ngAfterContentChecked");
   }
-  ngAfterContentViewInit(){
-    console.log("AppComponent: ngAfterContentViewInit");
+  ngAfterViewInit(){
+    console.log("HomePage: ngAfterViewInit");
   }
-  ngAfterContentViewChecked(){
-    console.log("AppComponent: ngAfterContentViewChecked");
+  ngAfterViewChecked(){
+    console.log("HomePage: ngAfterViewChecked");
   }
   ngOnDestroy(){
-    console.log("AppComponent: ngOnDestroy");
+    console.log("HomePage: ngOnDestroy");
   }
 
-  title : string ="Mi nuevo pagina!";
+  title : string ="Mi nueva página";
 
   hazmeClic(): void {
     alert("hiciste clic!");

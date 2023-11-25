@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { TarjetasComponent } from '../tarjetas/tarjetas.component';
 import { AgregarTarjetasComponent } from '../agregar-tarjetas/agregar-tarjetas.component';
 import { TarjetaService } from '../tarjeta.service';
+import { LoginComponent } from '../login/login.component';
 
 @NgModule({
   imports: [
@@ -16,8 +17,16 @@ import { TarjetaService } from '../tarjeta.service';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, TarjetasComponent, AgregarTarjetasComponent],
-  providers: [TarjetaService]
+  declarations: [
+    HomePage,
+    TarjetasComponent,
+    AgregarTarjetasComponent,
+    LoginComponent
+  ],
+  providers: [
+    TarjetaService
+  ]
 })
-export class HomePageModule {}
+export class HomePageModule { }
+
 
